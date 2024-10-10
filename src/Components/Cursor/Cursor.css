@@ -1,0 +1,23 @@
+.cursor,
+.cursor-follower {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    border-radius: 50%;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    background: var(--clr-text);
+    
+    &.cursor {
+        width: 0.7rem;
+        height: 0.7rem;
+        opacity: 0;
+    }
+    
+    &.cursor-follower {
+        width: 1.75rem;
+        height: 1.75rem;
+        opacity: 0;
+    }
+}

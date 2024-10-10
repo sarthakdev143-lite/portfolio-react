@@ -1,0 +1,28 @@
+.intro-image {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    figcaption {
+        font-size: clamp(2rem, 2vw, 2vw);
+        font-weight: 500;
+        color: var(--clr-text);
+    }
+
+    figure {
+        border-radius: 0.5rem;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(transparent, transparent, #090A0C);
+    }
+}

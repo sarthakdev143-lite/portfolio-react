@@ -1,0 +1,103 @@
+header {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff00;
+    mix-blend-mode: difference;
+    transition: all ease 0.5s;
+
+    &:hover {
+        backdrop-filter: blur(1rem);
+    }
+
+    nav {
+        background: transparent;
+        transition: all ease 0.5s;
+        padding: 0 3rem;
+        width: 100%;
+        height: 6rem;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+}
+
+ul#nav-ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+
+    li {
+        --maxHeight: 2.6rem;
+        max-height: var(--maxHeight);
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        -o-user-select: none;
+        user-select: none;
+
+        &#logo {
+            overflow-y: hidden;
+            position: relative;
+            padding: 0 0.45rem;
+            transform: translateX(-0.45rem);
+
+            h1 {
+                white-space: nowrap;
+                min-height: var(--maxHeight);
+                display: grid;
+                place-items: center;
+                font-size: 1.8rem;
+                transition: all ease 0.3s;
+                color: var(--clr-text);
+                font-weight: 600;
+                text-shadow: 0rem 0rem 0.45rem var(--clr-text);
+                mix-blend-mode: difference;
+                /* font-family: 'poppins'; */
+            }
+
+            &:hover {
+
+                .first,
+                .second {
+                    transform: translateY(-2.6rem);
+                }
+            }
+        }
+    }
+}
+
+.section-links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: var(--clr-white);
+        background: var(--clr-text);
+        width: 3.75rem;
+        height: 3.75rem;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        transition: all ease 0.3s, background ease 0.3s;
+        box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.3);
+        mix-blend-mode: difference;
+
+        li {
+            display: grid;
+            place-items: center;
+        }
+
+        &:hover {
+            box-shadow: var(--shadow);
+            transform: translateY(-0.15rem);
+        }
+    }
+}

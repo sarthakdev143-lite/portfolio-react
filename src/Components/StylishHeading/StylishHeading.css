@@ -1,0 +1,45 @@
+.heading-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    .before {
+        position: absolute;
+        font-size: 15rem;
+        font-weight: 100;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #222;
+        z-index: -1;
+        transition: all ease 0.3s;
+        text-shadow: 0 0 1rem #eeeeee13;
+    }
+
+    h1#catching-heading {
+        font-size: 3rem;
+        word-spacing: 0.5rem;
+        color: #fff;
+        z-index: 0;
+        font-family: 'Raleway';
+        font-weight: 100;
+
+        .stylish,
+        .shine {
+            letter-spacing: 0.3rem;
+            color: var(--highlight-clr);
+            text-shadow: 0 0 2.5rem var(--highlight-clr);
+
+            &.shine {
+                --highlight-clr: gold;
+            }
+
+            &.stylish {
+                --highlight-clr: rgb(255, 0, 128);
+                font-family: 'Raleway';
+                font-weight: 400;
+            }
+        }
+    }
+}
